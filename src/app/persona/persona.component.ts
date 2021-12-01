@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
 })
-export class PersonaComponent implements OnInit {
+export class PersonaComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  nombre : string = 'juan';
+  apellido : string ='perez';
+  edad : number = 25
 }

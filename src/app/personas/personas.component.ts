@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'app-personas',
   templateUrl: './personas.component.html',
   styleUrls: ['./personas.component.css']
 })
-export class PersonasComponent implements OnInit {
+export class PersonasComponent {
+  deshabilitar = false;
+  mensaje ='no  se ha agregado ninguna persona';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  agregarPersona() {
+    this.mensaje ='persona agregada';
   }
+}   
 
-}
+
